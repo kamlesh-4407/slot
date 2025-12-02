@@ -27,148 +27,147 @@ Add your course schedule using ```<td>``` tag.
 Execute the program using runserver command.
 
 ## PROGRAM
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
 <title>Slot Timetable</title>
+
 <style>
     body {
-        background-color: #f7f2e8;      /* cream */
-        color: #4b2e2b;                 /* deep brown */
-        font-family: Arial;
+        background-color: #faf7f2;
+        font-family: Arial, sans-serif;
+        color: #3e3e3e;
+        margin: 20px;
     }
+
+    h1 {
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
     table {
-        background-color: #f3e9d7;      /* light cream */
-        border-color: #6b4f3f;          /* dark brown */
+        width: 70%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background: #ffffff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-    th {
-        background-color: #d9c2a3;       /* muted brownish-cream */
-    }
-    .free-slot {
-        background-color: #f5dcb9;       /* soft beige */
-        color: #4b2e2b;
-    }
+
     caption {
+        padding: 10px;
+        font-size: 18px;
         font-weight: bold;
-        color: #4b2e2b;
+        color: #444;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #f2e9dd;
+        font-weight: bold;
+    }
+
+    .free-slot {
+        background-color: #f7efe6;
+        color: #555;
+        font-style: italic;
+    }
+
+    .lunch {
+        background: #f9f3ec;
+        font-weight: bold;
     }
 </style>
+
 </head>
 
 <body>
-<center>
-<h1><b>SLOT TIMETABLE</b></h1>
-</center>
-<br>
 
-<table align="center" width="540" cellspacing="2" cellpadding="4" border="4">
-<caption>SLOT TIMETABLE - Kamlesh Y-(212224100029)</caption>
+<h1>SLOT TIMETABLE</h1>
 
-<tr align="center">
-	<th>Day/Time</th>
-	<th>Monday</th>
-	<th>Tuesday</th>
-	<th>Wednesday</th>
-	<th>Thursday</th>
-	<th>Friday</th>
+<table>
+<caption>SLOT TIMETABLE - Kamlesh Y (212224100029)</caption>
+
+<tr>
+    <th>Day/Time</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
     <th>Saturday</th>
 </tr>
 
-<tr align="center">
-	<th>8-10</th>
-	<td>Training</td>
-	<td>Employement Enrichment Skills</td>
-	<td>Training</td>
-	<td>Company Specific</td>
-	<td>Training</td>
-    <td>Fundamentals of Web Application</td>
+<tr>
+    <th>8-10</th>
+    <td>Training</td>
+    <td>Employment Enrichment Skills</td>
+    <td>Training</td>
+    <td>Company Specific</td>
+    <td>Training</td>
+    <td>Fundamentals of Web App</td>
 </tr>
 
-<tr align="center">
-	<th>10-12</th>
-	<td>Training</td>
-	<td>Training</td>
-	<td>Training</td>
-	<td>Fundamentals of Web Application</td>
-	<td>Training</td>
+<tr>
+    <th>10-12</th>
+    <td>Training</td>
+    <td>Training</td>
+    <td>Training</td>
+    <td>Fundamentals of Web App</td>
+    <td>Training</td>
     <td>Training</td>
 </tr>
 
 <tr>
-	<th>12-1</th>
-	<td colspan="6" align="center">L U N C H   B R E A K</td>
+    <th>12-1</th>
+    <td class="lunch" colspan="6">LUNCH BREAK</td>
 </tr>
 
-<tr align="center">
-	<th>1-3</th>
-	<td>cyber law and compliance</td>
-	<td>Software Project Management</td>
-	<td>Mentor Meet</td>
-	<td>cyber law and compliance</td>
-	<td>training</td>
+<tr>
+    <th>1-3</th>
+    <td>Cyber Law & Compliance</td>
+    <td>Software Project Management</td>
+    <td>Mentor Meet</td>
+    <td>Cyber Law & Compliance</td>
+    <td>Training</td>
     <td>Training</td>
 </tr>
 
-<tr align="center">
-	<th>3-5</th>
-	<td>Fundamentals of Web Application</td>
-	<td class="free-slot">Free</td>
-	<td class="free-slot">Free</td>
-	<td>Software Project Management</td>
-	<td class="free-slot">Free</td>
+<tr>
+    <th>3-5</th>
+    <td>Fundamentals of Web App</td>
+    <td class="free-slot">Free</td>
+    <td class="free-slot">Free</td>
+    <td>Software Project Management</td>
+    <td class="free-slot">Free</td>
     <td class="free-slot">Free</td>
 </tr>
 </table>
 
-<br>
-
-<table align="center" cellspacing="2" cellpadding="4" border="2">
-<tr align="center">
-<th>S. No.</th>
-<th>Subject Code</th>
-<th>Subject Name</th>
-</tr>
-
+<table>
 <tr>
-<td align="center">1.</td>
-<td align="center">19EY712</td>
-<td>Employement Enrichment Skills</td>
+    <th>S. No.</th>
+    <th>Subject Code</th>
+    <th>Subject Name</th>
 </tr>
 
-<tr>
-<td align="center">2.</td>
-<td align="center">19CS504</td>
-<td>Software Project Management</td>
-</tr>
-
-<tr>
-<td align="center">3.</td>
-<td align="center">19EY706</td>
-<td>Company Specific</td>
-</tr>
-
-<tr>
-<td align="center">4.</td>
-<td align="center">19CS418</td>
-<td>Cyber law and compliance</td>
-</tr>
-
-<tr>
-<td align="center">5.</td>
-<td align="center">ECA-M</td>
-<td>Mentor Meet</td>
-</tr>
-
-<tr>
-<td align="center">6.</td>
-<td align="center">19AI414</td>
-<td>Fundamentals of Web Application</td>
-</tr>
+<tr><td>1.</td><td>19EY712</td><td>Employment Enrichment Skills</td></tr>
+<tr><td>2.</td><td>19CS504</td><td>Software Project Management</td></tr>
+<tr><td>3.</td><td>19EY706</td><td>Company Specific</td></tr>
+<tr><td>4.</td><td>19CS418</td><td>Cyber Law & Compliance</td></tr>
+<tr><td>5.</td><td>ECA-M</td><td>Mentor Meet</td></tr>
+<tr><td>6.</td><td>19AI414</td><td>Fundamentals of Web Application</td></tr>
 </table>
 
 </body>
 </html>
+
 
 ```
 
